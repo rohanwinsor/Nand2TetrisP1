@@ -26,22 +26,22 @@ M=M-1
 
 
 (LOOP)
-@R0 // GETS value from R[0] and Stores in D register
-D=M
+    @R0 // GETS value from R[0] and Stores in D register
+    D=M
 
-@R2 // Stores value in D register and adds it to R[2]
-M=M+D
+    @R2 // Stores value in D register and adds it to R[2]
+    M=M+D
 
-@Ri
-D=M
-M=M-1
+    @Ri
+    D=M
+    M=M-1
 
-@END
-D;JEQ
+    @END
+    D;JEQ
 
-@LOOP
-0;JMP
+    @LOOP
+    0;JMP
 
 (END)
-@END
-0;JMP
+    @END
+    0;JMP
